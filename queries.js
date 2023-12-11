@@ -55,10 +55,10 @@ db.topics.aggregate([
       task: "$tasks.task_name",
     },
   },
-])
+]);
 
-  
-  
+
+
 /*Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020*/
 
 db.company_drives.find({
@@ -70,7 +70,7 @@ db.company_drives.find({
 
 
 
-  /*Find all the company drives and students who are appeared for the placement.*/
+/*Find all the company drives and students who are appeared for the placement.*/
 
 db.company_drives.aggregate([
   {
@@ -81,9 +81,9 @@ db.company_drives.aggregate([
       as: "users",
     },
   },
-{
-  $unwind: "$users",
-},
+  {
+    $unwind: "$users",
+  },
   {
     $project: {
       _id: 0,
@@ -95,10 +95,10 @@ db.company_drives.aggregate([
     },
   },
 ]);
-  
 
 
-  /*Find the number of problems solved by the user in codekata*/
+
+/*Find the number of problems solved by the user in codekata*/
 
 db.codekata.aggregate([
   {
@@ -124,17 +124,17 @@ db.codekata.aggregate([
 
 
 
-  /*Find all the mentors with who has the mentee's count more than 15*/
-  db.mentors.find({
-    "mentor_count": {
-      $gt: 15
-    }
-  })
+/*Find all the mentors with who has the mentee's count more than 15*/
+db.mentors.find({
+  "mentor_count": {
+    $gt: 15
+  }
+})
 
 
 
 
-  /*Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020*/
+/*Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020*/
 
 db.attendance.aggregate([
   {
