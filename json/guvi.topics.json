@@ -5,7 +5,7 @@
   "topic_id": 1,
   "topic": "codekata",
   "topic_date": {
-    "$date": "2023-10-02T18:30:00.000Z"
+    "$date": "2020-10-02T18:30:00.000Z"
   }
 },
 {
@@ -15,7 +15,7 @@
   "topic_id": 2,
   "topic": "html",
   "topic_date": {
-    "$date": "2023-10-07T18:30:00.000Z"
+    "$date": "2020-10-07T18:30:00.000Z"
   }
 },
 {
@@ -25,7 +25,7 @@
   "topic_id": 3,
   "topic": "css",
   "topic_date": {
-    "$date": "2023-10-15T18:30:00.000Z"
+    "$date": "2020-10-15T18:30:00.000Z"
   }
 },
 {
@@ -35,7 +35,7 @@
   "topic_id": 4,
   "topic": "javascript",
   "topic_date": {
-    "$date": "2023-10-17T18:30:00.000Z"
+    "$date": "2020-10-17T18:30:00.000Z"
   }
 },
 {
@@ -45,7 +45,7 @@
   "topic_id": 5,
   "topic": "Advanced javascript",
   "topic_date": {
-    "$date": "2023-10-21T18:30:00.000Z"
+    "$date": "2020-10-21T18:30:00.000Z"
   }
 },
 {
@@ -55,6 +55,6 @@
   "topic_id": 6,
   "topic": "Reactjs",
   "topic_date": {
-    "$date": "2023-11-01T18:30:00.000Z"
+    "$date": "2020-11-01T18:30:00.000Z"
   }
 }]

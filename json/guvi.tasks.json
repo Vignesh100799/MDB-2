@@ -7,7 +7,7 @@
   "user_id": 1,
   "task_name": "html task",
   "due_date": {
-    "$date": "2023-10-03T18:30:00.000Z"
+    "$date": "2020-10-03T18:30:00.000Z"
   },
   "submitted": true
 },
@@ -20,9 +20,9 @@
   "user_id": 2,
   "task_name": "codekata task",
   "due_date": {
-    "$date": "2023-10-19T18:30:00.000Z"
+    "$date": "2020-10-19T18:30:00.000Z"
   },
-  "submitted": true
+  "submitted": false
 },
 {
   "_id": {
@@ -33,9 +33,9 @@
   "user_id": 3,
   "task_name": "css task",
   "due_date": {
-    "$date": "2023-10-25T18:30:00.000Z"
+    "$date": "2020-10-25T18:30:00.000Z"
   },
-  "submitted": false
+  "submitted": true
 },
 {
   "_id": {
@@ -46,9 +46,9 @@
   "user_id": 4,
   "task_name": "javascript task",
   "due_date": {
-    "$date": "2023-10-25T18:30:00.000Z"
+    "$date": "2020-10-25T18:30:00.000Z"
   },
-  "submitted": false
+  "submitted": true
 },
 {
   "_id": {
@@ -59,9 +59,9 @@
   "user_id": 5,
   "task_name": "advanced js task",
   "due_date": {
-    "$date": "2023-10-29T18:30:00.000Z"
+    "$date": "2020-10-29T18:30:00.000Z"
   },
-  "submitted": true
+  "submitted": false
 },
 {
   "_id": {
@@ -72,7 +72,7 @@
   "user_id": 6,
   "task_name": "reactjs task",
   "due_date": {
-    "$date": "2023-11-02T18:30:00.000Z"
+    "$date": "2020-11-02T18:30:00.000Z"
   },
   "submitted": false
 }]
