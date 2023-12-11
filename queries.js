@@ -3,37 +3,61 @@
 // use students; switch to data base:
 
 db.topics.aggregate([
-    {
-      $lookup: {
-        from: "tasks",
-        localField: "topicid",
-        foreignField: "topicid",
-        as: "taskinfo",
-      },
+  {
+    $lookup: {
+      from: "tasks",
+      localField: "topic_id",
+      foreignField: "task_id",
+      as: "tasks",
     },
-    {
-      $match: {
-        $and: [
-          {
-            $or: [
-              { topic_date: { $gt: new Date("30-sep-2020") } },
-              { topic_date: { $lt: new Date("1-nov-2020") } },
-            ],
-          },
-  
-          {
-            $or: [
-              { "taskinfo.due_date": { $gt: new Date("30-sep-2020") } },
-              { "taskinfo.due_date": { $lt: new Date("1-nov-2020") } },
-            ],
-          },
-        ],
-      },
+  },
+  {
+    $match: {
+      $and: [
+        {
+          $and: [
+            {
+              topic_date: {
+                $gt: new Date("30-sep-2023"),
+              },
+            },
+            {
+              topic_date: {
+                $lt: new Date("1-nov-2023"),
+              },
+            },
+          ],
+        },
+        {
+          $and: [
+            {
+              "tasks.due_date": {
+                $gt: new Date("30-sep-2023"),
+              },
+            },
+            {
+              "tasks.due_date": {
+                $lt: new Date("1-nov-2023"),
+              },
+            },
+          ],
+        },
+      ],
     },
-  ]);
+  },
+  {
+    $unwind: "$tasks",
+  },
+  {
+    $project: {
+      _id: 0,
+      topic: "$topic",
+      task: "$tasks.task_name",
+    },
+  },
+])
 
   
-
   
 /*Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020*/
 

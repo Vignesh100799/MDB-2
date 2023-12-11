@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "657341009955f27d440140f7"
+  },
+  "userid": 1,
+  "drive_date": {
+    "$date": "2023-10-04T18:30:00.000Z"
+  },
+  "company": "Company1"
+},
+{
+  "_id": {
+    "$oid": "657341219955f27d440140f8"
+  },
+  "userid": 2,
+  "drive_date": {
+    "$date": "2023-10-09T18:30:00.000Z"
+  },
+  "company": "Company2"
+},
+{
+  "_id": {
+    "$oid": "6573412e9955f27d440140f9"
+  },
+  "userid": 3,
+  "drive_date": {
+    "$date": "2023-10-11T18:30:00.000Z"
+  },
+  "company": "Company3"
+},
+{
+  "_id": {
+    "$oid": "6573413a9955f27d440140fa"
+  },
+  "userid": 4,
+  "drive_date": {
+    "$date": "2023-10-11T18:30:00.000Z"
+  },
+  "company": "Company4"
+},
+{
+  "_id": {
+    "$oid": "6573416a9955f27d440140fb"
+  },
+  "userid": 5,
+  "drive_date": {
+    "$date": "2020-10-17T18:30:00.000Z"
+  },
+  "company": "Company5"
+},
+{
+  "_id": {
+    "$oid": "657341759955f27d440140fc"
+  },
+  "userid": 7,
+  "drive_date": {
+    "$date": "2020-10-27T18:30:00.000Z"
+  },
+  "company": "Company6"
+},
+{
+  "_id": {
+    "$oid": "657341889955f27d440140fd"
+  },
+  "userid": 6,
+  "drive_date": {
+    "$date": "2020-10-20T18:30:00.000Z"
+  },
+  "company": "Company7"
+},
+{
+  "_id": {
+    "$oid": "657341939955f27d440140fe"
+  },
+  "userid": 8,
+  "drive_date": {
+    "$date": "2020-10-29T18:30:00.000Z"
+  },
+  "company": "Company8"
+},
+{
+  "_id": {
+    "$oid": "6573419f9955f27d440140ff"
+  },
+  "userid": 9,
+  "drive_date": {
+    "$date": "2020-10-30T18:30:00.000Z"
+  },
+  "company": "Company9"
+},
+{
+  "_id": {
+    "$oid": "657341bb9955f27d44014100"
+  },
+  "userid": 10,
+  "drive_date": {
+    "$date": "2020-11-11T18:30:00.000Z"
+  },
+  "company": "Company10"
+}]
