@@ -18,12 +18,12 @@ db.topics.aggregate([
           $and: [
             {
               topic_date: {
-                $gt: new Date("30-sep-2023"),
+                $gt: new Date("30-sep-2020"),
               },
             },
             {
               topic_date: {
-                $lt: new Date("1-nov-2023"),
+                $lt: new Date("1-nov-2020"),
               },
             },
           ],
@@ -32,12 +32,12 @@ db.topics.aggregate([
           $and: [
             {
               "tasks.due_date": {
-                $gt: new Date("30-sep-2023"),
+                $gt: new Date("30-sep-2020"),
               },
             },
             {
               "tasks.due_date": {
-                $lt: new Date("1-nov-2023"),
+                $lt: new Date("1-nov-2020"),
               },
             },
           ],
@@ -63,8 +63,8 @@ db.topics.aggregate([
 
 db.company_drives.find({
   "drive_date": {
-    $gte: new Date("2023-10-15"),
-    $lte: new Date("2023-10-31")
+    $gte: new Date("2020-10-15"),
+    $lte: new Date("2020-10-31")
   }
 });
 
@@ -159,14 +159,14 @@ db.attendance.aggregate([
       $and: [
         {
           $or: [
-            { "topics.topic_date": { $gte: new Date("15-oct-2023") } },
-            { "topics.topic_date": { $lte: new Date("31-oct-2023") } },
+            { "topics.topic_date": { $gte: new Date("15-oct-2020") } },
+            { "topics.topic_date": { $lte: new Date("31-oct-2020") } },
           ],
         },
         {
           $or: [
-            { "tasks.due_date": { $gte: new Date("15-oct-2023") } },
-            { "tasks.due_date": { $lte: new Date("31-oct-2023") } },
+            { "tasks.due_date": { $gte: new Date("15-oct-2020") } },
+            { "tasks.due_date": { $lte: new Date("31-oct-2020") } },
           ],
         },
       ],
